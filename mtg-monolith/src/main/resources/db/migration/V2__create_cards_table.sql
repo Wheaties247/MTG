@@ -1,0 +1,6 @@
+CREATE TABLE CARDS(
+ID serial,
+CARD_ID varchar(100) NOT NULL,
+USER_ID integer NOT NULL,
+DECK_ID varchar(100) NOT NULL
+);

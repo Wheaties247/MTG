@@ -1,0 +1,143 @@
+.App {
+  text-align: center;
+  background: linear-gradient(to right, rgb(217, 152, 54), rgb(42,100, 56), rgb(59, 14, 93), rgb(115, 20, 33), rgb(42, 100, 56));
+  height: 100vh;
+  color: rgb(235, 235, 235);
+  overflow-y: scroll;
+}
+
+/*.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+*/
+.manageDecks{
+  padding: 3%;
+}
+label{
+  font-size: 30px;
+  text-decoration: none;
+}
+input[type=button]{
+  color: rgb(235, 235, 235);
+  transform: scale(4);
+  margin-bottom: 3%;
+  background: black;
+  border-radius: 5px;
+}
+input[type=text]{
+  color: rgb(235, 235, 235);
+  text-align: center;
+  font-size: 40px;
+  height: 50px;
+  cursor: text;
+  outline: none;
+  width: 70vw;
+  background: transparent;
+  border: 0 solid transparent;
+  border-bottom: 2px solid black;
+  margin: 5%;
+}
+.hover{
+  transition: .4s;
+}
+.hover:hover {
+  transform: scale(1.2);
+  text-shadow: 10px 10px black;
+}
+.results{
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cardImg{
+  width: 223px;
+  height: 310px;
+  margin: 5px;
+  border-radius: 15px;
+}
+.noImg{
+  background:url(./images/magicTheGatheringCardBack.jpg);
+  width: 223px;
+  height: 310px;
+  background-size: contain;
+  margin: 5px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.deckBuilder{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 500px;
+}
+.editCard{
+  border: 5px solid black;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.closeForm:hover {
+  background: red;
+  border:1px solid black;
+  border-radius: 15px;
+}
+.deckRadio {
+  height: 100px;
+  overflow-y: auto;
+  border: 3px solid black;
+  border-radius: 15px;
+}
+.search{
+  overflow-y: scroll;
+  padding: 3%;
+}
+.deckBuilderLinks{
+  display: flex;
+  justify-content: space-around;
+    flex-direction: column;
+  margin: 3%;
+}
+.currentCard{
+  padding: 3%;
+}
+@media(max-width: 600px){
+  .deckBuilder{
+    overflow-y: scroll;
+    height: 50vh;
+    margin-bottom: 3%;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  .deckBuilderLinks{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
